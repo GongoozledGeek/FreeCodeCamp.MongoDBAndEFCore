@@ -20,7 +20,7 @@ public class RestaurantReservationDbContext : DbContext
         base.OnModelCreating(modelBuilder);
         
         modelBuilder.Entity<Restaurant>(); // Linked to collection via Data Annotation in Model
-        // modelBuilder.Entity<Reservation>();
+        // modelBuilder.Entity<Reservation>(); // Original tutorial code
         modelBuilder.Entity<Reservation>().ToCollection("reservations");
     }
 }

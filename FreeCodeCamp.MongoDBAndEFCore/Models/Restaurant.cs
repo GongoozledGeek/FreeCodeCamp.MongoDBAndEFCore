@@ -10,7 +10,7 @@ public class Restaurant
     public ObjectId Id { get; set; }
 
     [Required(ErrorMessage = "You must provide a name")]
-    // [Display(Name = "Name")]
+    // [Display(Name = "Name")] // Original code used Display attributes as the properties where in Camel Case
     public string? Name { get; set; }
 
     [Required(ErrorMessage = "You must add a cuisine type")]

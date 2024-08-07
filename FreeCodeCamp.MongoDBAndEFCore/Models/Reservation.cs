@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FreeCodeCamp.MongoDBAndEFCore.Models;
 
-// [Collection("reservations")] // Linked in RestaurantReservationDbContext.OnModelCreating
+// [Collection("reservations")] // Now linked in RestaurantReservationDbContext.OnModelCreating
 public class Reservation
 {
     public ObjectId Id { get; set; }
